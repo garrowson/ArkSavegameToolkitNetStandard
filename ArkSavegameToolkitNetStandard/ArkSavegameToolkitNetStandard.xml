@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArkSavegameToolkitNetStandard</name>
+    </assembly>
+    <members>
+        <member name="M:ArkSavegameToolkitNet.ArkSavegame.LoadEverything">
+            <summary>
+            Load all gameobjects, properties and other data in this savegame.
+            </summary>
+        </member>
+        <member name="F:ArkSavegameToolkitNet.Data.ExtraDataRegistry.EXTRA_DATA_HANDLERS">
+            <summary>
+            Contains ExtraDataHandler in reverse Order
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Data.ExtraDataRegistry.getExtraData(ArkSavegameToolkitNet.GameObject,ArkSavegameToolkitNet.ArkArchive,System.Int64)">
+            <summary>
+            Searches <seealso cref="!:#EXTRA_DATA_HANDLERS"/> in reverse Order and terminates on the first
+            <seealso cref="!:ExtraDataHandler"/> which can handle given <seealso cref="T:ArkSavegameToolkitNet.GameObject"/> {@code object}
+            </summary>
+            <param name="obj"> The GameObject </param>
+            <param name="archive"> The source archive of object </param>
+            <param name="length"> Amount of bytes of extra data
+            @return </param>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.IGameObject.ObjectId">
+            <summary>
+            Is the index of this object in the container
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Structs.IStruct.StructType">
+            <summary>
+            May be null if struct is contained in ArrayProperty
+            
+            @return
+            </summary>
+        </member>
+    </members>
+</doc>

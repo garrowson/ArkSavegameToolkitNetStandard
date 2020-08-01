@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ArkSavegameToolkitNetStandard.Domain</name>
+    </assembly>
+    <members>
+        <member name="P:ArkSavegameToolkitNet.Domain.ArkCreature.BaseStats">
+            <summary>
+            0 - health<br></br> 1 - stamina<br></br> 2 - torpor<br></br> 3 - oxygen<br></br> 4 - food<br></br> 5 - water<br></br> 6 - temperature<br></br> 7 - weight<br></br> 8 - melee damage<br></br> 9 - movement speed<br></br> 10 - fortitude<br></br> 11 - crafting speed
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.ArkGameData.Update(System.Threading.CancellationToken,ArkSavegameToolkitNet.Domain.ArkPlayerExternal[],System.Boolean,ArkSavegameToolkitNet.Domain.ArkAnonymizeData)">
+            <param name="externalPlayerData">Supply the update operation with external player data. This is a way to make sure transfered players are not lost inbetween saves.</param>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.ArkPlayer.#ctor(ArkSavegameToolkitNet.IGameObject,ArkSavegameToolkitNet.IGameObject,System.DateTime,ArkSavegameToolkitNet.ISaveState)">
+            <summary>
+            
+            </summary>
+            <param name="profile">.arkprofile->PrimalPlayerData</param>
+            <param name="player">savegame->PlayerPawnTest_Female/Male_C</param>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.ArkPlayer.Items">
+            <summary>
+            Items owned by this player (but not their tribe)
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.ArkPlayer.Inventory">
+            <summary>
+            Items in the players inventory
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.ArkTamedCreature.TargetingTeam">
+            <summary>
+            TribeId or PlayerId to which the tamed creature belongs.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.ArkTribe.Items">
+            <summary>
+            Items owned by this tribe (but not by individual tribe members)
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.DomainHelper.WriteDataStructure(System.Collections.Generic.IEnumerable{ArkSavegameToolkitNet.IGameObject},System.String)">
+            <summary>
+            Write property data structure information for a collection of GameObjects to specified file path (use default grouping on classname).
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.DomainHelper.WriteDataStructure(System.Collections.Generic.IEnumerable{System.Linq.IGrouping{System.String,ArkSavegameToolkitNet.IGameObject}},System.String)">
+            <summary>
+            Write property data structure information for a collection of GameObjects to specified file path.
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.ISaveStateExtensions.GetApproxTimeElapsedSince(ArkSavegameToolkitNet.ISaveState,System.Nullable{System.Double})">
+            <summary>
+            Get the approximate time span since an event in-game.
+            </summary>
+        </member>
+        <member name="M:ArkSavegameToolkitNet.Domain.ISaveStateExtensions.GetApproxDateTimeOf(ArkSavegameToolkitNet.ISaveState,System.Nullable{System.Double})">
+            <summary>
+            Get the approximate date and time when an event in-game will occur
+            </summary>
+        </member>
+        <member name="T:ArkSavegameToolkitNet.Domain.MapResources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_Aberration_P">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_CrystalIsles">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_extinction">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_Ragnarok">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_ScorchedEarth_P">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_ShigoIslands">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_TheCenter">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_TheIsland">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_TheVolcano">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ArkSavegameToolkitNet.Domain.MapResources.topo_map_Valguero_P">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
